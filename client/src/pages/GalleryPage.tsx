@@ -43,7 +43,7 @@ const GalleryPage = () => {
             <GalleryFilter 
               categories={categories}
               selectedCategory={selectedCategory}
-              onSelectedCategory={setSelectedCategory}
+              onSelectCategory={setSelectedCategory}
             />
             <GalleryGrid images={filteredImages} />
         </div>

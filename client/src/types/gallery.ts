@@ -8,7 +8,7 @@ export interface GalleryImage {
 export interface GalleryFilterProps {
     categories: string[];
     selectedCategory: string;
-    onSelectedCategory: (category: string) => void;
+    onSelectCategory: (category: string) => void;
 }
 
 export interface GalleryGridProps {
