@@ -19,7 +19,7 @@ const GalleryPage = () => {
                 setFilteredImages(res);
 
                 //extract unique categories
-                const uniqueCategories = ['All', ...new Set(res.map(img => img.category))];
+                const uniqueCategories = ['All', ...new Set(res.map((img): string  => img.category))];
                 setCategories(uniqueCategories);
             } catch (error) {
                 console.error('Error fetching images:', error);
