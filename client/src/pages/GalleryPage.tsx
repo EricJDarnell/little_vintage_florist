@@ -7,7 +7,7 @@ import { fetchGalleryImages } from "../api";
 const GalleryPage = () => {
     const [images, setImages] = useState<GalleryImage[]>([]);
     const [filteredImages, setFilteredImages] = useState<GalleryImage[]>([]);
-    const [categories, setCategories] = useState<String[]>(['All']);
+    const [categories, setCategories] = useState<string[]>(['All']);
     const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
     //fetch images from db
@@ -19,7 +19,7 @@ const GalleryPage = () => {
                 setFilteredImages(res);
 
                 //extract unique categories
-                const uniqueCategories = ['All', ...new Set(res.map((img): string  => img.category))];
+                const uniqueCategories = ['All', ...new Set(res.map((img) => img.category as string))];
                 setCategories(uniqueCategories);
             } catch (error) {
                 console.error('Error fetching images:', error);
