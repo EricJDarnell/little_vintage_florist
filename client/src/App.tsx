@@ -6,8 +6,8 @@ import './App.css'
 function App() {
   return (
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/gallery' element={<GalleryPage />}/>
+        {/* <Route path='/' element={<Home />}/> */}
+        <Route path='/' element={<GalleryPage />}/>
       </Routes>
   )
 }
