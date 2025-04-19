@@ -7,7 +7,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center bg-cover bg-center" 
         style={{
-              backgroundImage: "url('/images/hero-bouquet.jpg')"
+              backgroundImage: "url(https://res.cloudinary.com/dekkpjwfz/image/upload/v1744564484/PXL_20250312_014354130.PORTRAIT_zyoebs.jpg)"
             }}>
         <div className="absolute inset-0 bg-black/30"></div>
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
@@ -29,18 +29,18 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
-              title: "Product 01",
-              image: "/images/wedding-collection.jpg",
+              title: "Wedding Collection",
+              image: "https://res.cloudinary.com/dekkpjwfz/image/upload/v1744765486/IMG_9965_j9xodo.jpg",
               link: "/collections/weddings"
             },
             {
-              title: "Product 02",
-              image: "/images/seasonal-collection.jpg",
+              title: "Seasonal Collection",
+              image: "https://res.cloudinary.com/dekkpjwfz/image/upload/v1744564484/PXL_20250312_011017768.PORTRAIT_2_euczfj.jpg",
               link: "/collections/seasonal"
             },
             {
-              title: "Product 03",
-              image: "/images/dried-collection.jpg",
+              title: "Dried Collection",
+              image: "https://res.cloudinary.com/dekkpjwfz/image/upload/v1744765539/PXL_20250312_014154326.RAW-01.COVER_henb18.jpg",
               link: "/collections/dried"
             }
           ].map(collection => (
